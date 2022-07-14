@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body,html{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+
+.hero-image{
+    
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.hero-image img{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    opacity: 0.91;
+    
+    
+}
+
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: 35;
+    margin-top: 2vh;
+
+  }
+
+ 
+
+.hero-text h1{
+    font-weight: 2000;
+    text-shadow: 5px 5px 10px black; 
+    font-size: 6vw; 
+    margin-left: 80px;
+}
+
+/* Search box */
+
+.search{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    height: 90px;
+    border-radius: 0.2rem;
+  }
+
+.search-container{
+    width: 80%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 30px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0.2rem;
+    
+  }
+
+.search-container input{
+  width: 90%;
+  font-size: 19px;
+  font-weight: 300;
+  color: black;
+  padding: 0 10px;
+  caret-color: #536bf6;
+  outline: none;
+  border: none;
+  margin:0 0 0 0;
+  height: 100%;
+
+}
+
+.search-icon {
+  height: 34px;
+  width: 34px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 10px;
+  bottom: 30px;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+  
