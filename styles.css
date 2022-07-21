@@ -32,6 +32,7 @@ a{
 	text-decoration: none;
 	color: #eee;
 }
+
 #particles-js{
   height:100%;
   width:100%;
@@ -294,6 +295,9 @@ nav ul li a:hover::after{
   border-radius: 5px;
   margin-top: 30px;
 }
+
+/* Menu */
+
 
 /* Popular spots */
 
@@ -666,23 +670,26 @@ p{
 
  .socials li a{
   text-decoration: none;
-  color: #fff;
+  color: white;
   padding: 5px;
   width: 70px;
-  font-size: 30;
-  
+  font-size: 50;
+  size: 50px;
+ 
 }
 
 
 .footer-menu{
-  margin-bottom:20px ;
+  margin-bottom:1px ;
+ 
 }
 
 .footer-menu ul{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 5px;
+  margin-top: 1px;
 }
 
 .footer-menu ul li{
@@ -710,9 +717,10 @@ p{
 .footer-bottom{
   background: #000;
   width: 100vw;
-  padding: 1px;
+  padding: 0;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
+  height: 50px;
 }
 
 .footer-bottom p{
