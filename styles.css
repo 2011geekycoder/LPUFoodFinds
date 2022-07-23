@@ -6,7 +6,7 @@ body,html{
     background-color: #D6DBDF;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    /* width: 100vw; */
     text-decoration: none;
     /* font-family: 'Poppins', sans-serif; */
     height: 100%;
@@ -14,6 +14,7 @@ body,html{
     box-sizing: border-box;
   
 }
+
 
 /* Header */
 
@@ -298,6 +299,88 @@ nav ul li a:hover::after{
 
 /* Menu */
 
+.menu-section{
+  
+  text-align: center;
+  position: relative;
+ }
+
+.menu-underline{
+  width: 200px;
+  height: 5px;
+  background: crimson;
+  margin: 26px auto;
+}
+
+.menu-container{
+  /* background-image: url("Images/doodlebg.jpg"); */
+  text-align: center;
+}
+
+.menu-container h1{
+  color: white;
+  font-size: 4vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.menu-row img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: black 1px solid;
+  padding: 3px;
+  margin: 3px;
+  transition: 0.25s all ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: 100%;
+}
+
+.menu-row img:hover{
+  transform: scale(1.11); 
+  cursor: pointer;
+} 
+
+
+.menu-image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+#btn{
+  background-color: gold;
+  font-size: 24px;
+  padding: 12px 28px;
+  border-radius: 12px;
+  border: 2px solid rgb(159, 136, 8);
+  transition-duration:0.4s ;
+  margin-top: 50px;
+}
+
+#btn:hover{
+  background-color: white;
+  border: 2px solid rgb(159, 136, 8);
+  color: black;
+  cursor: pointer;
+}
+
+#btn:active {
+  background-color: gold;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
 /* Popular spots */
 
@@ -388,12 +471,11 @@ nav ul li a:hover::after{
 
 /* Reviews */
 
-.testimonials{
-  padding: 40px,0;
+ .testimonials{
+  padding: 30px;
   background: #212529;
   text-align: center;
   margin-top: 150px;
-
 }
 
 .inner{
@@ -411,7 +493,7 @@ nav ul li a:hover::after{
 }
 
 .border{
-  width: 700px;
+  width: 300px;
   height: 5px;
   background: crimson;
   margin: 26px auto;
@@ -476,7 +558,88 @@ nav ul li a:hover::after{
     max-width: 100%;
   }
   
+} 
+
+/* write review */
+
+.review-form{
+  margin:auto;
+  margin-top: 30px;
+  width: 40%;
+  padding: 40px;
+  background: white;
+  backdrop-filter: blur(10px);
+  border-radius: 60px;
+  position: relative;
 }
+
+#review-heading{
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 20px;
+}
+
+.review-form .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.review-form .inputBox input,
+.review-form .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.review-form .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.25s;
+  color: #666;
+
+}
+
+.review-form .inputBox input:focus ~ span,
+.review-form .inputBox input:valid ~ span,
+.review-form .inputBox textarea:focus ~ span,
+.review-form .inputBox textarea:valid ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.review-form .inputBox input[type = "submit"]{
+  position: relative;
+  background-color: #27bcda;
+  border: none;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+}
+
+
+
+
 
 /* Team members */
 
@@ -587,7 +750,7 @@ nav ul li a:hover::after{
   opacity: 1;
 }
 
-h2 {
+.team-border h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: white;
   margin-left: 20px;
@@ -624,7 +787,7 @@ footer{
   background-color: #111;
   height: auto;
   padding-top: 40px;
-  width: 100vw;
+  /* width: 100vw; */
   color: white;
 }
 
@@ -716,7 +879,7 @@ p{
 
 .footer-bottom{
   background: #000;
-  width: 100vw;
+  /* width: 100vw; */
   padding: 0;
   text-align: center;
   margin-top: 30px;
@@ -741,4 +904,22 @@ p{
   }
 
 }
+
+/* Scroll bar designing */
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent,#FF0000);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent , gold);
+}
+
+
+
 

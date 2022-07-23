@@ -23,4 +23,19 @@ open.addEventListener("click", function(){
     }
 });
 
+// show more
+
+$(".item").slice(0,6).show()
+            $(".btn").on("click", function(){
+                if ($(".item:hidden").length != 0) {
+                     $(".item:hidden").slice(0,6).slideDown()
+                     document.getElementById('btn').innerText = 'Show Less';
+                }
+                else if ($(".itemm:hidden").length == 0) {
+                    // $(".col-lg-4").fadeOut('slow')
+                     $(".item").slice(6,12).slideUp()
+                     document.getElementById('btn').innerText = 'Show More';
+                }   
+            })
+
 
