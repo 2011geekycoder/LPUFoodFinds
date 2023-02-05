@@ -3,7 +3,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap'); */
 
 body,html{
-    background-color: #D6DBDF;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(30, 27, 27));
     margin: 0;
     padding: 0;
     /* width: 100vw; */
@@ -12,6 +12,7 @@ body,html{
     height: 100%;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    
   
 }
 
@@ -303,24 +304,40 @@ nav ul li a:hover::after{
   
   text-align: center;
   position: relative;
+  
+ }
+
+ .menu-container .chota{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
  }
 
 .menu-underline{
-  width: 200px;
+  width: 500px;
   height: 5px;
   background: crimson;
   margin: 26px auto;
+  
 }
 
-.menu-container{
-  /* background-image: url("Images/doodlebg.jpg"); */
+.menu-container .chota{
+  
   text-align: center;
+  display: block;
+  width: 100%;
 }
 
-.menu-container h1{
+.menu-container .chota h1{
   color: white;
-  font-size: 4vw;
+  font-size: 5vw;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  
+  
+  
 }
 
 .menu-row{
@@ -328,20 +345,22 @@ nav ul li a:hover::after{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+  padding-top: 20px;
+  margin: 20px;
 }
 
 .menu-row img{
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  border: black 1px solid;
+  height: 150px;
+  width: 150px;
+  border-radius: 20%;
+  /* border: black 1px solid; */
   padding: 3px;
   margin: 3px;
   transition: 0.25s all ease-in-out;
   display: flex;
   flex-wrap: wrap;
   background-size: 100%;
+  
 }
 
 .menu-row img:hover{
@@ -351,7 +370,7 @@ nav ul li a:hover::after{
 
 
 .menu-image{
-  display: block;
+  display: flex;
   width: 100%;
   height: auto;
 }
@@ -391,39 +410,40 @@ nav ul li a:hover::after{
   position:relative;
   width: auto;
   padding-top: 80px;
+  
 }
 
 .page-section h1{
   font-size: 4vw;
   color: white;
-  margin-top: 30px;
+  /* margin-top: 30px;
   margin-bottom: 50px;
-  margin-left: 25px;
+  margin-left: 25px; */
   font-family: 'Poppins', sans-serif;;
 }
 
 .slideshow-border{
-  width: 350px;
+  width: 50%;
   height: 5px;
   background: crimson;
-  margin:26px auto;
+  margin:15px auto;
 }
 
 
 .slideshow-container {
 	position: relative;
-  box-sizing: border-box;
-  place-items: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #212529;
+  /* box-sizing: border-box; */
+  /* place-items: center; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* background-color: #212529; */
 }
 
 .mySlides {
 	display: flex;
-
-  width: 60%;
+  margin: auto;
+  width: 50%;
   height: 400px;
   background-image: url("Images/lpu1.jpg");
   background-size: 100% 100%;
@@ -458,8 +478,7 @@ nav ul li a:hover::after{
 
 .demo {
 	opacity: 0.6;
- 
-	
+
   }
 
   .active,
@@ -471,7 +490,7 @@ nav ul li a:hover::after{
 
 /* Reviews */
 
- .testimonials{
+  .testimonials{
   padding: 30px;
   background: #212529;
   text-align: center;
@@ -562,7 +581,7 @@ nav ul li a:hover::after{
 
 /* write review */
 
-.review-form{
+ .review-form{
   margin:auto;
   margin-top: 30px;
   width: 40%;
@@ -636,8 +655,8 @@ nav ul li a:hover::after{
   transition-duration: 0.4s;
 
 }
-
-
+ 
+ 
 
 
 
